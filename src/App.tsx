@@ -1,16 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import Home from './pages/Home/Home'
-import Footer from './components/Footer/Footer'
-import About from './pages/About/About'
-import Login from './pages/Login/Login'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import About from "./pages/About/About";
+import Login from "./pages/Login/Login";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
-
   return (
     <>
-    <BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh]">
             <Routes>
@@ -22,8 +23,9 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
+      </AuthProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
