@@ -13,15 +13,15 @@ function Login() {
     {} as UsuarioLogin
   );
 
-  const { email, handleLogin } = useContext(AuthContext);
+  const { usuario, handleLogin } = useContext(AuthContext);
 
   const { isLoading } = useContext(AuthContext);
 
   useEffect(() => {
-    if (email.token !== "") {
+    if (usuario.token !== "") {
       navigate("/home");
     }
-  }, [email]);
+  }, [usuario]);
 
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setUsuarioLogin({

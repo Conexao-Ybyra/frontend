@@ -4,7 +4,7 @@ import UsuarioLogin from "../models/UsuarioLogin"
 import { login } from "../services/Service"
 
 interface AuthContextProps {
-    email: UsuarioLogin
+    usuario: UsuarioLogin
     handleLogout(): void
     handleLogin(usuario: UsuarioLogin): Promise<void>
     isLoading: boolean
@@ -18,7 +18,7 @@ export const AuthContext = createContext({} as AuthContextProps)
 
 export function AuthProvider({ children }: AuthProviderProps) {
 
-    const [email, setUsuario] = useState<UsuarioLogin>({
+    const [usuario, setUsuario] = useState<UsuarioLogin>({
         id: 0,
         nome: "",
         email: "",
@@ -57,7 +57,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
 
     return (
-        <AuthContext.Provider value={{ email, handleLogin, handleLogout, isLoading }}>
+        <AuthContext.Provider value={{ usuario, handleLogin, handleLogout, isLoading }}>
             {children}
         </AuthContext.Provider>
     )
