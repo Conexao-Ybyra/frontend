@@ -1,3 +1,13 @@
+/* CSS HEX */
+--mint: #1DBC86ff;
+--emerald: #68D27Eff;
+--mint-green: #D0F9EBff;
+--orange-crayola: #F18245ff;
+--sunglow: #FCCE38ff;
+--antiflash-white: #E9EEEEff;
+--white: #FFFFFFff;
+--english-violet: #3C394Dff;
+
 /* CSS HSL */
 --mint: hsla(160, 73%, 43%, 1);
 --emerald: hsla(132, 54%, 62%, 1);
