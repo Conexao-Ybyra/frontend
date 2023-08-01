@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer (){
   return (
     <>
@@ -6,12 +8,11 @@ function Footer (){
           <div className="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
             {/* <!-- nav - start --> */}
             <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-              <a
-                href="#"
+              <Link to="/about"
                 className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
-                About
-              </a>
+                Sobre nós
+              </Link>
               <a
                 href="#"
                 className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
@@ -93,7 +94,7 @@ function Footer (){
               </a>
 
               <a
-                href="#"
+                href="https://github.com/Conexao-Ybyra"
                 target="_blank"
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
@@ -113,7 +114,7 @@ function Footer (){
           </div>
 
           <div className="py-8 text-center text-sm text-gray-400">
-            © 2021 - Present Flowrift. All rights reserved.
+            &copy; 2023 - Conexão Ybyra. Todos os direitos reservados.
           </div>
         </footer>
       </div>
