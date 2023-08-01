@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
+import { toastAlerta } from '../../util/toastAlerta';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
 
     function logout() {
         handleLogout()
-        alert('Usuário deslogado com sucesso')
+        toastAlerta('Usuário deslogado com sucesso', 'info')
         navigate('/login')
     }
 
@@ -32,10 +33,10 @@ function Navbar() {
       {/* nav - start */}
       <nav className={`gap-12 lg:flex ${isDropdownOpen ? 'hidden' : 'lg:block'} lg:items-center lg:w-auto md:hidden sm:hidden `}>
         
-        <Link to="/postagens" className="text-lg font-semibold text-indigo-500" onClick={closeDropdown}>
+        <Link to="/postagens" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700" onClick={closeDropdown}>
           Postagens
         </Link>
-        <Link to="/cadastroPostagem" className="text-lg font-semibold text-indigo-500" onClick={closeDropdown}>
+        <Link to="/cadastroPostagem" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700" onClick={closeDropdown}>
           Cadastrar Postagem
         </Link>
         <Link to="/temas" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700" onClick={closeDropdown}>
