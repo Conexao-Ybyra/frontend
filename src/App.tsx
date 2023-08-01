@@ -6,6 +6,14 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
+import Cadastro from "./pages/Cadastro/Cadastro";
+import ListaTemas from "./components/Temas/listaTemas/ListaTemas";
+import FormularioTema from "./components/Temas/formularioTema/FormularioTema";
+import DeletarTema from "./components/Temas/deletarTema/DeletarTema";
+import ListaPostagens from "./components/Postagens/listaPostagens/ListaPostagens";
+import FormularioPostagem from "./components/Postagens/formularioPostagem/FormularioPostagem";
+import DeletarPostagem from "./components/Postagens/deletarPostagem/DeletarPostagem";
+import Perfil from "./pages/Perfil/Perfil";
 
 function App() {
   return (
@@ -17,8 +25,18 @@ function App() {
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/temas" element={<ListaTemas />} />
+              <Route path="/cadastroTema" element={<FormularioTema />} />
+              <Route path="/editarTema/:id" element={<FormularioTema />} />
+              <Route path="/deletarTema/:id" element={<DeletarTema />} />
+              <Route path="/postagens" element={<ListaPostagens />} />
+              <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
+              <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
               <Route path="/about" element={<About />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />
