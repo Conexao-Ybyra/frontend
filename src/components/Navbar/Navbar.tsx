@@ -27,7 +27,10 @@ function Navbar() {
   let navbarPos;
   let navbarPre;
 
-  if (usuario.token !== "") {
+  if (usuario.token == "") {
+    navbarPre = (<h1>Hello World</h1>);
+
+  } else if (usuario.token !== "") {
     navbarPos = (
       <header className="ml-8 mr-8 mb-8 flex items-center justify-between border-b py-4 md:mb-12 md:py-8 xl:mb-16">
         {/* logo - start */}
@@ -158,15 +161,12 @@ function Navbar() {
         {/* buttons - end */}
       </header>
     );
-  } else if (usuario.token == "") {
-    navbarPre = (<h1>Hello World</h1>);
-
-  }
+  } 
 
   return (
     <>
-    {navbarPos}
     {navbarPre}
+    {navbarPos}
     </>
     ) ;
 }
