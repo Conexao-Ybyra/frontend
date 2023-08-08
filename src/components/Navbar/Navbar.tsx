@@ -33,7 +33,7 @@ function Navbar() {
         {/* logo - start */}
         <Link
           to="/home"
-          className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+          className="inline-flex items-center gap-2.5 text-2xl font-bold text-regal-blue hover:text-orange-crayola md:text-3xl"
           aria-label="logo"
         >
           Conexão Ybyra
@@ -42,34 +42,33 @@ function Navbar() {
 
         {/* nav - start */}
         <nav
-          className={`gap-12 lg:flex ${
-            isDropdownOpen ? "hidden" : "lg:block"
-          } lg:items-center lg:w-auto md:hidden sm:hidden `}
+          className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
+            } lg:items-center lg:w-auto md:hidden sm:hidden `}
         >
           <Link
             to="/home"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
             onClick={closeDropdown}
           >
             Home
           </Link>
           <Link
             to="/sobre"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
             onClick={closeDropdown}
           >
             Sobre
           </Link>
           <Link
             to="/time"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
             onClick={closeDropdown}
           >
             Time
           </Link>
           <Link
             to="/contato"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
             onClick={closeDropdown}
           >
             Contato
@@ -79,18 +78,12 @@ function Navbar() {
 
         {/* buttons - start */}
         <div>
-        <Link
-          to="/login"
-          className="hidden rounded-lg bg-gray-200 px-5 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-        >
-          Entrar
-        </Link>
-        <Link
-          to="/cadastro"
-          className="hidden rounded-lg bg-gray-200 px-5 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-        >
-          Cadastre-se
-        </Link>
+          <Link
+            to="/login"
+            className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+          >
+            Entrar
+          </Link>
         </div>
 
         {/* Dropdown menu for smaller screens */}
@@ -118,32 +111,32 @@ function Navbar() {
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg">
               <Link
-                to="/postagens"
+                to="/home"
                 className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
                 onClick={closeDropdown}
               >
-                Postagens
+                Home
               </Link>
               <Link
-                to="/temas"
+                to="/sobre"
                 className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
                 onClick={closeDropdown}
               >
-                Temas
+                Sobre
               </Link>
               <Link
-                to="/cadastroTema"
+                to="/time"
                 className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
                 onClick={closeDropdown}
               >
-                Cadastrar Temas
+                Time
               </Link>
               <Link
-                to="/perfil"
+                to="/contato"
                 className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
                 onClick={closeDropdown}
               >
-                Perfil
+                Contato
               </Link>
             </div>
           )}
@@ -168,9 +161,8 @@ function Navbar() {
 
         {/* nav - start */}
         <nav
-          className={`gap-12 lg:flex ${
-            isDropdownOpen ? "hidden" : "lg:block"
-          } lg:items-center lg:w-auto md:hidden sm:hidden `}
+          className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
+            } lg:items-center lg:w-auto md:hidden sm:hidden `}
         >
           <Link
             to="/postagens"
@@ -284,14 +276,14 @@ function Navbar() {
         {/* buttons - end */}
       </header>
     );
-  } 
+  }
 
   return (
     <>
-    {navbarPre}
-    {navbarPos}
+      {navbarPre}
+      {navbarPos}
     </>
-    ) ;
+  );
 }
 
 export default Navbar;
