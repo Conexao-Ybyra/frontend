@@ -42,9 +42,8 @@ function Navbar() {
 
         {/* nav - start */}
         <nav
-          className={`gap-12 lg:flex ${
-            isDropdownOpen ? "hidden" : "lg:block"
-          } lg:items-center lg:w-auto md:hidden sm:hidden `}
+          className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
+            } lg:items-center lg:w-auto md:hidden sm:hidden `}
         >
           <Link
             to="/home"
@@ -79,18 +78,12 @@ function Navbar() {
 
         {/* buttons - start */}
         <div>
-        <Link
-          to="/login"
-          className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-        >
-          Entrar
-        </Link>
-        <Link
-          to="/cadastro"
-          className="hidden rounded-3xl bg-gray-200 px-5 py-3 mr-3 text-center text-sm font-semibold text-orange-crayola outline-none ring-indigo-300 transition duration-100 hover:bg-orange-crayola hover:text-antiflash-white focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
-        >
-          Cadastre-se
-        </Link>
+          <Link
+            to="/login"
+            className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+          >
+            Entrar
+          </Link>
         </div>
 
         {/* Dropdown menu for smaller screens */}
@@ -168,9 +161,8 @@ function Navbar() {
 
         {/* nav - start */}
         <nav
-          className={`gap-12 lg:flex ${
-            isDropdownOpen ? "hidden" : "lg:block"
-          } lg:items-center lg:w-auto md:hidden sm:hidden `}
+          className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
+            } lg:items-center lg:w-auto md:hidden sm:hidden `}
         >
           <Link
             to="/postagens"
@@ -284,14 +276,14 @@ function Navbar() {
         {/* buttons - end */}
       </header>
     );
-  } 
+  }
 
   return (
     <>
-    {navbarPre}
-    {navbarPos}
+      {navbarPre}
+      {navbarPos}
     </>
-    ) ;
+  );
 }
 
 export default Navbar;
