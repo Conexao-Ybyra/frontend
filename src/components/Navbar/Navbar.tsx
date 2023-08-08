@@ -29,7 +29,7 @@ function Navbar() {
 
   if (usuario.token == "") {
     navbarPre = (
-      <header className="ml-8 mr-8 mb-8 flex items-center justify-between border-b py-4 md:mb-12 md:py-8 xl:mb-16">
+      <header className="pl-8 pr-8 pb-8 flex items-center justify-between py-4 bg-emerald md:pb-12 md:py-8 xl:pb-16">
         {/* logo - start */}
         <Link
           to="/home"
