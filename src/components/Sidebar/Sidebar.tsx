@@ -1,8 +1,9 @@
-import logo from "../../assets/images/conexao-ybyra-logo.png";
+import logo from "../../assets/images/cy-logo.png";
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { toastAlerta } from "../../util/toastAlerta";
+import './Sidebar.css'
 
 const Sidebar = () => {
   const { usuario, handleLogout } = useContext(AuthContext);
@@ -149,7 +150,7 @@ const Sidebar = () => {
   // fixed top-0 left-0
   return (
     <>
-      <nav className="w-1/6 h-full bg-white space-y-8 sm:w-80">
+      <nav className="w-1/6 h-full bg-white space-y-8 sm:w-80 quicksand">
         <div className="flex flex-col h-full">
           <div className="h-20 flex pl-12 items-center">
             <a href="javascript:void(0)" className="flex-none">
@@ -160,13 +161,13 @@ const Sidebar = () => {
             <ul className="pl-10 text-md font-medium flex-1">
               {navigation.map((item, idx) => (
                 <li key={idx}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 active:bg-gray-100 duration-150"
                   >
                     <div className="text-gray-500">{item.icon}</div>
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
