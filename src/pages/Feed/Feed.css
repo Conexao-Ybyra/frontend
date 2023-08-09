@@ -3,3 +3,32 @@
     font-weight: 700;
     font-size: 35px;
 }
+
+.fonte h2 {
+    font-size: 18px;
+}
+
+.estilo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.estilo h1 {
+    font-size: 16px;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #68D27E; 
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
