@@ -15,11 +15,15 @@ export function Feed() {
       navigate("/login");
     }
   }, [usuario.token]);
-  
+
   return (
-    <>
+    <div className="flex h-screen w-screen justify-end">
       <Sidebar />
-      <div>Feed</div>
-    </>
+      <div className="w-4/6 mt-1 mb-1 border border-indigo-600 rounded-lg bg-mint-green">
+      Feed
+        </div>
+
+      <div className="w-1/6 bg-mint"></div>
+    </div>
   );
 }

@@ -146,10 +146,10 @@ const Sidebar = () => {
     },
     
   ];
-
+  // fixed top-0 left-0
   return (
     <>
-      <nav className="fixed top-0 left-0 w-64 h-full border-r bg-white space-y-8 sm:w-80">
+      <nav className="w-1/6 h-full bg-white space-y-8 sm:w-80">
         <div className="flex flex-col h-full">
           <div className="h-20 flex pl-12 items-center">
             <a href="javascript:void(0)" className="flex-none">
@@ -157,7 +157,7 @@ const Sidebar = () => {
             </a>
           </div>
           <div className="flex-1 flex flex-col h-full overflow-auto">
-            <ul className="px-4 text-sm font-medium flex-1">
+            <ul className="pl-10 text-md font-medium flex-1">
               {navigation.map((item, idx) => (
                 <li key={idx}>
                   <a
