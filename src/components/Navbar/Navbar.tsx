@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { toastAlerta } from "../../util/toastAlerta";
+import ybyra from '../../assets/ybyra.svg';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -36,6 +37,7 @@ function Navbar() {
           className="inline-flex items-center gap-2.5 text-2xl font-bold text-regal-blue hover:text-orange-crayola md:text-3xl"
           aria-label="logo"
         >
+          <img src={ybyra} alt="Logo Conexão Ybyra"/>
           Conexão Ybyra
         </Link>
         {/* logo - end */}
@@ -148,13 +150,14 @@ function Navbar() {
 
   } else if (usuario.token !== "") {
     navbarPos = (
-      <header className="ml-8 mr-8 mb-8 flex items-center justify-between border-b py-4 md:mb-12 md:py-8 xl:mb-16">
+      <header className="pl-8 pr-8 pb-8 flex items-center justify-between py-4 bg-emerald md:pb-12 md:py-8 xl:pb-16">
         {/* logo - start */}
         <Link
           to="/home"
-          className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+          className="inline-flex items-center gap-2.5 text-2xl font-bold text-regal-blue hover:text-orange-crayola md:text-3xl"
           aria-label="logo"
         >
+          <img src={ybyra} alt="Logo Conexão Ybyra"/>
           Conexão Ybyra
         </Link>
         {/* logo - end */}
@@ -199,20 +202,13 @@ function Navbar() {
           >
             Perfil
           </Link>
-          <Link
-            to="/about"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-            onClick={closeDropdown}
-          >
-            Sobre
-          </Link>
         </nav>
         {/* nav - end */}
 
         {/* buttons - start */}
         <button
           onClick={logout}
-          className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+          className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
         >
           Sair
         </button>
@@ -240,7 +236,7 @@ function Navbar() {
           </button>
 
           {isDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg">
+            <div className="absolute right-0 mt-2 w-40 rounded-lg bg-emerald shadow-lg">
               <Link
                 to="/postagens"
                 className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"

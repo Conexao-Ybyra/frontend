@@ -1,6 +1,6 @@
 import aboutImg from "../../assets/images/aboutImg.jpg";
 
-const About = () => {
+const Sobre = () => {
   return (
     <>
       <div className="bg-white py-6 sm:py-8 lg:py-12">
@@ -78,4 +78,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Sobre;
