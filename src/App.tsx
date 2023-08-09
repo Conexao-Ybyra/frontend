@@ -16,6 +16,7 @@ import FormularioPostagem from "./components/Postagens/formularioPostagem/Formul
 import DeletarPostagem from "./components/Postagens/deletarPostagem/DeletarPostagem";
 import Perfil from "./pages/Perfil/Perfil";
 import { ToastContainer } from "react-toastify";
+import { Feed } from "./pages/Feed/Feed";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <div className="min-h-[80vh]">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/feed" element={<Feed />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/temas" element={<ListaTemas />} />

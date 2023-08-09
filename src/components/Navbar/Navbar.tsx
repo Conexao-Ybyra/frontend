@@ -24,7 +24,7 @@ function Navbar() {
     setIsDropdownOpen(false);
   };
 
-  let navbarPos;
+  //let navbarPos;
   let navbarPre;
 
   if (usuario.token == "") {
@@ -153,10 +153,10 @@ function Navbar() {
       </header>
     );
 
-  } else if (usuario.token !== "") {
+  } /*else if (usuario.token !== "") {
     navbarPos = (
-      <header className="ml-8 mr-8 mb-8 flex items-center justify-between border-b py-4 md:mb-12 md:py-8 xl:mb-16">
-        {/* logo - start */}
+      <header className="pl-8 pr-8 pb-8 flex items-center justify-between py-4 bg-emerald md:pb-12 md:py-8 xl:pb-16">
+        {/* logo - start }
         <Link
           to="/home"
           className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
@@ -164,9 +164,9 @@ function Navbar() {
         >
           Conexão Ybyra
         </Link>
-        {/* logo - end */}
+        {/* logo - end }
 
-        {/* nav - start */}
+        {/* nav - start }
         <nav
           className={`gap-12 lg:flex ${
             isDropdownOpen ? "hidden" : "lg:block"
@@ -215,9 +215,9 @@ function Navbar() {
             Sobre
           </Link>
         </nav>
-        {/* nav - end */}
+        {/* nav - end }
 
-        {/* buttons - start */}
+        {/* buttons - start }
         <button
           onClick={logout}
           className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
@@ -225,7 +225,7 @@ function Navbar() {
           Sair
         </button>
 
-        {/* Dropdown menu for smaller screens */}
+        {/* Dropdown menu for smaller screens }
         <div className="relative lg:hidden">
           <button
             type="button"
@@ -280,16 +280,15 @@ function Navbar() {
             </div>
           )}
         </div>
-        {/* Dropdown menu for smaller screens - end */}
-        {/* buttons - end */}
+        {/* Dropdown menu for smaller screens - end }
+        {/* buttons - end }
       </header>
     );
-  } 
+  } */
 
   return (
     <>
     {navbarPre}
-    {navbarPos}
     </>
     ) ;
 }
