@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { toastAlerta } from "../../util/toastAlerta";
-import ybyra from '../../assets/ybyra.svg';
+import ybyra from '../../assets/images/cy-logo.png';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -30,7 +30,7 @@ function Navbar() {
 
   if (usuario.token == "") {
     navbarPre = (
-      <header className="pl-8 pr-8 flex items-center justify-between py-4 bg-[#9bf2d4] md:pb-12 md:py-8 xl:pb-16">
+      <header className="pl-8 pr-8 flex items-center justify-between py-4 bg-mint-green md:pb-12 md:py-8 xl:pb-16">
         {/* logo - start */}
         <Link
           to="/home"
@@ -38,7 +38,6 @@ function Navbar() {
           aria-label="logo"
         >
           <img src={ybyra} alt="Logo Conexão Ybyra"/>
-          Conexão Ybyra
         </Link>
         {/* logo - end */}
 
@@ -148,21 +147,20 @@ function Navbar() {
       </header>
     );
 
-  } else if (usuario.token !== "") {
+  } /* else if (usuario.token !== "") {
     navbarPos = (
-      <header className="pl-8 pr-8 pb-8 flex items-center justify-between py-4 bg-emerald md:pb-12 md:py-8 xl:pb-16">
-        {/* logo - start */}
+      <header className="pl-8 pr-8 pb-8 flex items-center justify-between py-4 bg-mint-green md:pb-12 md:py-8 xl:pb-16">
+        {/* logo - start *}
         <Link
-          to="/home"
+          to="/feed"
           className="inline-flex items-center gap-2.5 text-2xl font-bold text-regal-blue hover:text-orange-crayola md:text-3xl"
           aria-label="logo"
         >
           <img src={ybyra} alt="Logo Conexão Ybyra"/>
-          Conexão Ybyra
         </Link>
-        {/* logo - end */}
+        {/* logo - end *}
 
-        {/* nav - start */}
+        {/* nav - start *}
         <nav
           className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
             } lg:items-center lg:w-auto md:hidden sm:hidden `}
@@ -203,9 +201,9 @@ function Navbar() {
             Perfil
           </Link>
         </nav>
-        {/* nav - end */}
+        {/* nav - end * }
 
-        {/* buttons - start */}
+        {/* buttons - start *}
         <button
           onClick={logout}
           className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
@@ -213,7 +211,7 @@ function Navbar() {
           Sair
         </button>
 
-        {/* Dropdown menu for smaller screens */}
+        {/* Dropdown menu for smaller screens *}
         <div className="relative lg:hidden">
           <button
             type="button"
@@ -268,11 +266,11 @@ function Navbar() {
             </div>
           )}
         </div>
-        {/* Dropdown menu for smaller screens - end */}
-        {/* buttons - end */}
+        {/* Dropdown menu for smaller screens - end *}
+        {/* buttons - end *}
       </header>
     );
-  }
+  } */
 
   return (
     <>

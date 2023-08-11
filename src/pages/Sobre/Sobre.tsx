@@ -4,7 +4,7 @@ import aboutImg from "../../assets/images/aboutImg.jpg";
 const Sobre = () => {
   return (
     <>
-      <div className="gradient py-6 sm:py-8 lg:py-12">
+      <div className="bg-mint-green py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-12">
             <div>

@@ -44,7 +44,7 @@ const membros = [
 const Equipe = () => {
     return (
         <>
-            <div className="team gradient">
+            <div className="bg-mint-green">
                 <h1 className="flex justify-center text-4xl font-bold py-4">Time de desenvolvimento</h1>
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
                     {membros.map((membro) => (

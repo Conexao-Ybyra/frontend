@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
+import { useContext } from "react";
 
 function Footer (){
-  return (
-    <>
-      <div className="bg-[#D0F9EB] pt-4 sm:pt-10 lg:pt-12">
+  const { usuario } = useContext(AuthContext);
+  let footer;
+
+  if (usuario.token == "") {
+    footer = (
+
+      <div className="bg-mint-green pt-4 sm:pt-10 lg:pt-12">
         <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
             {/* <!-- nav - start --> */}
@@ -118,6 +124,12 @@ function Footer (){
           </div>
         </footer>
       </div>
+    )
+  }
+  
+  return (
+    <>
+    {footer}
     </>
   );
 };
