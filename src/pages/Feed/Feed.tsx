@@ -31,7 +31,9 @@ export function Feed() {
 
   return (
     <div className="flex h-screen w-screen justify-end">
-      <Sidebar />
+      <div className="w-2/12  ">
+        <Sidebar />
+      </div>
       <div className="w-7/12 mt-1 mb-1 rounded-lg bg-mint-green flex flex-col">
         <div className="h-24 p-8 flex justify-between items-center ">
           <div>
@@ -133,7 +135,7 @@ export function Feed() {
         </div>
         <div className="h-3/5 flex overflow-hidden">
           <div className="w-2/3 rounded-lg bg-gray-100 shadow-lg m-6 flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-500 scrollbar-track-300">
-            <h2 className="titulo p-4" >Atividades perto de você</h2>
+            <h2 className="titulo p-4">Atividades perto de você</h2>
             <ListaTemas />
           </div>
           <div className="w-1/3 rounded-lg bg-gray-100 shadow-lg m-6"> </div>
@@ -141,7 +143,9 @@ export function Feed() {
       </div>
 
       <div className="w-3/12 ">
-        <Calendario className="w-50 h-50"/>
+        <div className="w-50 h-50">
+          <Calendario />
+        </div>
       </div>
     </div>
   );
