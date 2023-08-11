@@ -36,7 +36,7 @@ function Cadastro() {
     }, [usuarioResposta])
 
     function back() {
-        navigate('/login')
+        navigate('/')
     }
 
     function handleConfirmarSenha(e: ChangeEvent<HTMLInputElement>) {
