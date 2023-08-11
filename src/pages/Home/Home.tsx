@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hero from "../../assets/images/hero.jpg";
+import hero from "../../assets/images/hero.png";
 import "./Home.css";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       <section className="text-gray-600 body-font gradient">
         <div className="container mx-auto flex px-5 py-24  flex-row items-center">
           <div className="lg:flex-grow w-3/4 mr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="batatinha sm:text-4xl text-7xl mb-4 text-antiflash-white ">
+            <h1 className="fonte sm:text-4xl text-7xl mb-4 text-antiflash-white ">
               Conexão Ybyra
             </h1>
             <h2 className="text-xl mb-8 text-regal-blue ">
@@ -16,10 +16,10 @@ const Home = () => {
             </h2>
 
             <div className="flex lg:flex-row md:flex-col">
-              <Link to="/cadastro" className="hidden rounded-3xl bg-gray-200 px-5 py-3 mr-3 text-center text-sm font-semibold text-orange-crayola outline-none ring-indigo-300 transition duration-100 hover:bg-orange-crayola hover:text-antiflash-white focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
+              <Link to="/cadastro" className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
                 Cadastre-se
               </Link>
-              <Link to="/about" className="hidden rounded-3xl bg-gray-200 px-5 py-3 mr-3 text-center text-sm font-semibold text-orange-crayola outline-none ring-indigo-300 transition duration-100 hover:bg-orange-crayola hover:text-antiflash-white focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
+              <Link to="/sobre" className="hidden rounded-3xl bg-gray-200 px-5 py-3 mr-3 text-center text-sm font-semibold text-orange-crayola outline-none ring-indigo-300 transition duration-100 hover:bg-orange-crayola hover:text-antiflash-white focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">
                 Saiba mais
               </Link>
             </div>
