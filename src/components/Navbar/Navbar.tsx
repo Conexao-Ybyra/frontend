@@ -6,9 +6,7 @@ import ybyra from '../../assets/images/cy-logo.png';
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const { usuario, handleLogout } = useContext(AuthContext);
-
-  let navigate = useNavigate();
+  const { usuario } = useContext(AuthContext);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
