@@ -88,6 +88,15 @@ function FormularioPostagem() {
     });
   }
 
+  function atualizarEstado2(e: ChangeEvent<HTMLTextAreaElement>) {
+    setPostagem({
+      ...postagem,
+      [e.target.name]: e.target.value,
+      tema: tema,
+      usuario: usuario,
+    });
+  }
+
   function retornar() {
     navigate("/postagens");
   }
@@ -147,7 +156,7 @@ function FormularioPostagem() {
           <textarea
             value={postagem.conteudo}
             onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-              atualizarEstado(e)
+              atualizarEstado2(e)
             }
             placeholder="Conteúdo da Postagem"
             name="conteudo"
