@@ -38,13 +38,13 @@ function Login() {
 
   return (
     <>
-      <div className="bg-mint-green grid grid-cols-2 items-center">
-      <img src={Image} className="flex p-10"/>
+      <div className="bg-mint-green flex flex-wrap items-center">
+      <img src={Image} className="w-2/5 ml-20"/>
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mx-auto max-w-lg rounded-lg bg-white drop-shadow">
           <form onSubmit={login}>
             <div className="flex flex-col gap-4 p-4 md:p-8 px-20">
-            <h2 className="mb-4 text-center text-2xl font-bold text-orange-crayola md:mb-8 lg:text-3xl">
+            <h2 className="text-orange-crayola text-5xl mt-5 text-center font-semibold">
             Login
           </h2>
               <div>

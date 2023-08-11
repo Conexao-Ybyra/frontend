@@ -73,77 +73,77 @@ function Cadastro() {
 
     return (
         <>
-            <div className="flex justify-center font-bold bg-mint-green pt-7 px-24">
-                <form className='px-10 md:px-8 rounded-lg bg-white drop-shadow' onSubmit={cadastrarNovoUsuario}>
+            <div className="flex flex-wrap justify-center font-bold bg-mint-green pt-7 ">
+                <form className='w-96 px-10 rounded-lg bg-white drop-shadow h-2/5' onSubmit={cadastrarNovoUsuario}>
                     <h2 className='text-emerald text-5xl mt-5 text-center'>Cadastre-se</h2>
-                    <div className="flex flex-col w-full mt-3">
-                        <label htmlFor="nome" className='font-bold text-emerald'>Nome</label>
+                    <div className="flex flex-col w-full mt-5">
+                        <label htmlFor="nome" className='text-emerald font-medium inline-block'>Nome</label>
                         <input
                             type="text"
                             id="nome"
                             name="nome"
                             placeholder="Nome"
-                            className="border bg-gray-50 rounded ring-orange-crayola transition-100 focus:ring p-1 font-normal"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={usuario.nome}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full mt-2">
-                        <label htmlFor="usuario" className='text-emerald'>Usuario</label>
+                        <label htmlFor="usuario" className='text-emerald font-medium inline-block'>Usuario</label>
                         <input
                             type="text"
                             id="usuario"
                             name="email"
-                            placeholder="Usuario"
-                            className="border rounded p-2 font-normal"
+                            placeholder="Email"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={usuario.email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full mt-2">
-                        <label htmlFor="foto" className='text-emerald'>Foto</label>
+                        <label htmlFor="foto" className='text-emerald font-medium inline-block'>Foto</label>
                         <input
                             type="text"
                             id="foto"
                             name="foto"
                             placeholder="Foto"
-                            className="border rounded p-2 font-normal"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={usuario.foto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full mt-2">
-                        <label htmlFor="endereco" className='text-emerald'>Endereço</label>
+                        <label htmlFor="endereco" className='text-emerald font-medium inline-block'>Endereço</label>
                         <input
                             type="text"
                             id="endereco"
                             name="endereco"
                             placeholder="Endereço"
-                            className="border rounded p-2 font-normal"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={usuario.endereco}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full mt-2">
-                        <label htmlFor="senha" className='text-emerald'>Senha</label>
+                        <label htmlFor="senha" className='text-emerald font-medium inline-block'>Senha</label>
                         <input
                             type="password"
                             id="senha"
                             name="senha"
                             placeholder="Senha"
-                            className="border rounded p-2 font-normal"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={usuario.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full mt-2">
-                        <label htmlFor="confirmarSenha" className='text-emerald'>Confirmar Senha</label>
+                        <label htmlFor="confirmarSenha" className='text-emerald font-medium inline-block'>Confirmar Senha</label>
                         <input
                             type="password"
                             id="confirmarSenha"
                             name="confirmarSenha"
                             placeholder=""
-                            className="border rounded p-2"
+                            className="border bg-gray-50 rounded transition-100 focus:ring focus:outline-none ring-emerald p-1 font-normal"
                             value={confirmaSenha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
                         />
