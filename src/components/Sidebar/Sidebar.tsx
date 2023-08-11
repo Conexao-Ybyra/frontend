@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { toastAlerta } from "../../util/toastAlerta";
-import './Sidebar.css'
+import './Sidebar.css';
+import avatar from '../../assets/images/avatar.svg';
 
 const Sidebar = () => {
   const { usuario, handleLogout } = useContext(AuthContext);
@@ -243,10 +244,12 @@ const Sidebar = () => {
               </div>
               <div className="py-4 px-4 border-t">
                 <div className="flex items-center gap-x-4">
-                  <img
-                    src={usuario.foto}
-                    className="w-12 h-12 rounded-full"
-                  />
+                { (usuario.foto == "" || usuario.foto == " ") ? (
+                <img src={avatar} alt={`O perfil de ${usuario.nome} está sem foto`} className='w-12 h-12 rounded-full' />
+            ) : (
+                <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} className='w-12 h-12 rounded-full' />
+            )
+            }
                   <div>
                     <span className="block text-gray-700 text-sm font-semibold">
                     {usuario.nome}
