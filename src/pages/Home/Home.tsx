@@ -11,7 +11,6 @@ import MiniAbout from "../../components/miniAbout/miniAbout"
 const Home = () => {
   return (
     <>
-      
       <Hero/>
       <Features/>
       <MiniAbout/>
