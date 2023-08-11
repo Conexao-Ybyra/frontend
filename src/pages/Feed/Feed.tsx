@@ -141,7 +141,7 @@ export function Feed() {
       </div>
 
       <div className="w-3/12 ">
-        <Calendario className="w-50 h-50"/>
+        <Calendario />
       </div>
     </div>
   );
