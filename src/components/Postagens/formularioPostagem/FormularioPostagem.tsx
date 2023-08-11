@@ -79,7 +79,7 @@ function FormularioPostagem() {
     });
   }, [tema]);
 
-  function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
+  function atualizarEstado(e: ChangeEvent<HTMLTextAreaElement>) {
     setPostagem({
       ...postagem,
       [e.target.name]: e.target.value,
