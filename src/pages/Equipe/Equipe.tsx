@@ -44,9 +44,9 @@ const membros = [
 const Equipe = () => {
     return (
         <>
-            <div className="bg-mint-green">
+            <div className="bg-mint-green h-full">
                 <h1 className="flex justify-center text-4xl font-bold py-4">Time de desenvolvimento</h1>
-                <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
                     {membros.map((membro) => (
                         <div key={membro.id} className="bg-white border rounded-xl p-4 m-8 mt-[75px] shadow">
                             <img src={membro.foto} alt={membro.nome} className="w-32 h-32 rounded-full mx-auto -mt-[75px]" />

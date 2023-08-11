@@ -21,7 +21,7 @@ const Contato = () => {
 
     return (
         <>
-            <div className='bg-mint-green grid grid-cols-2 items-center justify-items-center sm:grid-cols-1'>
+            <div className='bg-mint-green grid grid-cols-2 items-center justify-items-center sm:grid-cols-1 h-full'>
                 <form ref={form} onSubmit={sendEmail} className='w-2/3'>
                     <label>Nome completo</label>
                     <input

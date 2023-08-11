@@ -1,10 +1,10 @@
 import { ChangeEvent, useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
-import Postagem from "../../../models/Postagem";
-import Tema from "../../../models/Tema";
 import { buscar, atualizar, cadastrar } from "../../../services/Service";
 import { toastAlerta } from "../../../util/toastAlerta";
+import Postagem from "../../../models/Postagem";
+import Tema from "../../../models/Tema";
 
 function FormularioPostagem() {
   let navigate = useNavigate();
@@ -152,7 +152,7 @@ function FormularioPostagem() {
         {id !== undefined ? "Editar Postagem" : "Cadastrar Postagem"}
       </h1>
       <form onSubmit={gerarNovaPostagem} className="flex  gap-2">
-        <div className="w-2/3 m-2 ">
+        <div className="w-2/3 m-2">
           <textarea
             value={postagem.conteudo}
             onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
