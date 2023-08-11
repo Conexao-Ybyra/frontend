@@ -183,7 +183,7 @@ const Sidebar = () => {
   // fixed top-0 left-0
   return (
     <>
-      <nav className="w-1/6 h-full bg-white space-y-8 sm:w-80 quicksand">
+      <nav className="w-2/12 h-full bg-white space-y-8 sm:w-80 quicksand">
         <div className="flex flex-col h-full">
           <div className="h-20 flex pl-12 items-center">
             <a href="javascript:void(0)" className="flex-none">
