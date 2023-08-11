@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
-import ybyra from '../../assets/images/cy-logo.png';
+import ybyra from "../../assets/images/cy-logo.png";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -27,14 +27,15 @@ function Navbar() {
           className="inline-flex items-center gap-2.5  md:text-3xl"
           aria-label="logo"
         >
-          <img src={ybyra} alt="Logo Conexão Ybyra"/>
+          <img src={ybyra} alt="Logo Conexão Ybyra" />
         </Link>
         {/* logo - end */}
 
         {/* nav - start */}
         <nav
-          className={`gap-12 lg:flex ${isDropdownOpen ? "hidden" : "lg:block"
-            } lg:items-center lg:w-auto md:hidden sm:hidden `}
+          className={`gap-12 lg:flex ${
+            isDropdownOpen ? "hidden" : "lg:block"
+          } lg:items-center lg:w-auto md:hidden sm:hidden `}
         >
           <Link
             to="/home"
@@ -75,6 +76,12 @@ function Navbar() {
           >
             Entrar
           </Link>
+
+          <Link
+            to="/cadastro"
+            className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-antiflash-white hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+          >
+            Cadastre-se
         </div>
 
         {/* Dropdown menu for smaller screens */}
@@ -136,14 +143,9 @@ function Navbar() {
         {/* buttons - end */}
       </header>
     );
+  }
 
-  } 
-
-  return (
-    <>
-      {navbarPre}
-    </>
-  );
+  return <>{navbarPre}</>;
 }
 
 export default Navbar;

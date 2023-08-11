@@ -36,8 +36,8 @@ function Login() {
 
   return (
     <>
-      <div className="bg-mint-green flex flex-wrap items-center">
-      <img src={imagem} className="w-2/5 ml-20"/>
+      <div className="bg-mint-green flex flex-wrap items-center justify-center h-screen md:flex-col py-16 md:pt-10 md:pb-16 ">
+      <img src={imagem} className="w-2/5 mx-auto "/>
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mx-auto max-w-lg rounded-lg bg-white drop-shadow">
           <form onSubmit={login}>
