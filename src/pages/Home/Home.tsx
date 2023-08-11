@@ -1,10 +1,10 @@
 import "./Home.css";
 import Hero from "../../components/Hero/hero";
 import Features from "../../components/Features/features";
-import MiniTeam from "../../components/miniTeam/miniTeam";
 import Testimonials from "../../components/Testimonials/testimonials";
-import Contact2 from "../../components/Contact/contact2";
+import Contato from "../Contato/Contato"
 import MiniAbout from "../../components/miniAbout/miniAbout"
+import Time from "../Equipe/Equipe"
 
 const Home = () => {
   return (
@@ -12,9 +12,9 @@ const Home = () => {
       <Hero/>
       <Features/>
       <MiniAbout/>
-      <MiniTeam/>
+      <Time/>
       <Testimonials/>
-      <Contact2/>
+      <Contato/>
     </>
   );
 };

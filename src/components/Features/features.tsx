@@ -8,26 +8,26 @@ import '../components.css'
 const propriedades = [
   {
     id: 1,
-    texto: "a",
+    texto: "Cuide da natureza local",
     imagem: Feature1,
   },
   { id: 2,
-    texto: "b",
+    texto: "Conheça novas pessoas",
     imagem: Feature2 },
 
   { id: 3,
-    texto: "c",
+    texto: "Apoie pequenos comércios",
     imagem: Feature3 },
 
   { id: 4,
-    texto: "d",
+    texto: "Construa em conjunto com sua comunidade",
     imagem: Feature4 },
 ];
 
 const features = () => {
   return (
     <>
-      <section className="bg-white py-6 sm:py-8 lg:py-12">
+      <section className="bg-white py-6 sm:py-8 lg:py-12 h-screen flex justify-center items-center flex-col gap-10">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
           <div className="mb-10 md:mb-16">
             <h2 className="mb-4 text-center text-2xl font-bold text-mint md:mb-6 lg:text-3xl">
