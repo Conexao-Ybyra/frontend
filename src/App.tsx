@@ -17,6 +17,7 @@ import DeletarPostagem from "./components/Postagens/deletarPostagem/DeletarPosta
 import Perfil from "./pages/Perfil/Perfil";
 import { ToastContainer } from "react-toastify";
 import Equipe from "./pages/Equipe/Equipe";
+import Contato from "./pages/Contato/Contato";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/perfil" element={<Perfil />} />
               <Route path="/time" element={<Equipe />} />
+              <Route path="/contato" element={<Contato />} />
             </Routes>
           <Footer />
         </BrowserRouter>
