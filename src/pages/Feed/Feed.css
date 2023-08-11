@@ -20,7 +20,11 @@
     font-size: 16px;
 }
 
-
+.box {
+  grid-template-columns: 0.4fr 1.9fr 0.7fr;
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+}
 ::-webkit-scrollbar {
     width: 8px;
   }

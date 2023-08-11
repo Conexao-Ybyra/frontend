@@ -1,11 +1,13 @@
-import { useContext, useEffect, useState } from 'react';
-import { Dna } from 'react-loader-spinner';
-import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../../contexts/AuthContext';
-import Postagem from '../../../models/Postagem';
-import { buscar } from '../../../services/Service';
-import CardPostagem from '../cardPostagens/CardPostagem';
-import { toastAlerta } from '../../../util/toastAlerta';
+import { useContext, useEffect, useState } from "react";
+import { Dna } from "react-loader-spinner";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthContext";
+import Postagem from "../../../models/Postagem";
+import { buscar } from "../../../services/Service";
+import CardPostagem from "../cardPostagens/CardPostagem";
+import { toastAlerta } from "../../../util/toastAlerta";
+import Sidebar from "../../Sidebar/Sidebar";
+import FormularioPostagem from "../formularioPostagem/FormularioPostagem";
 
 function ListaPostagens() {
   const [postagens, setPostagens] = useState<Postagem[]>([]);
@@ -16,23 +18,23 @@ function ListaPostagens() {
   const token = usuario.token;
 
   useEffect(() => {
-    if (token === '') {
-      toastAlerta('Você precisa estar logado', 'info');
-      navigate('/');
+    if (token === "") {
+      toastAlerta("Você precisa estar logado", "info");
+      navigate("/");
     }
   }, [token]);
 
   async function buscarPostagens() {
     try {
-      await buscar('/postagens', setPostagens, {
+      await buscar("/postagens", setPostagens, {
         headers: {
           Authorization: token,
         },
       });
     } catch (error: any) {
-      if (error.toString().includes('403')) {
-        toastAlerta('O token expirou, favor logar novamente', 'info')
-        handleLogout()
+      if (error.toString().includes("403")) {
+        toastAlerta("O token expirou, favor logar novamente", "info");
+        handleLogout();
       }
     }
   }
@@ -40,8 +42,13 @@ function ListaPostagens() {
   useEffect(() => {
     buscarPostagens();
   }, [postagens.length]);
+
   return (
-    <>
+    <div className="flex w-full flex-row-reverse">
+      <div className="w-2/12 h-screen fixed top-0 left-0 ">
+        <Sidebar />
+      </div>
+      <div className="w-2/12 "></div>
       {postagens.length === 0 && (
         <Dna
           visible={true}
@@ -52,12 +59,19 @@ function ListaPostagens() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
-      <div className='container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-        {postagens.map((postagem) => (
-          <CardPostagem key={postagem.id} post={postagem} />
-        ))}
+      <div className="w-8/12 ml-2 mt-1 mb-1 rounded-lg bg-mint-green flex flex-col overflow-y-auto ">
+        <div className="h-fit bg-mint-green">
+          <FormularioPostagem />
+        </div>
+        <div className="px-4 mx-auto">
+          {postagens
+            .sort((a, b) => b.id - a.id) 
+            .map((postagem) => (
+              <CardPostagem key={postagem.id} post={postagem} />
+            ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
