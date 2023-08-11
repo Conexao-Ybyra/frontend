@@ -146,9 +146,9 @@ function FormularioPostagem() {
         <div className="w-2/3 m-2 ">
           <textarea
             value={postagem.conteudo}
-            onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-              atualizarEstado(e)
-            }
+            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+    atualizarEstado(e)
+  }
             placeholder="Conteúdo da Postagem"
             name="conteudo"
             required
