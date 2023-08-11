@@ -34,7 +34,7 @@ function Navbar() {
         {/* logo - start */}
         <Link
           to="/home"
-          className="inline-flex items-center gap-2.5 text-2xl font-bold text-regal-blue hover:text-orange-crayola md:text-3xl"
+          className="inline-flex items-center gap-2.5  md:text-3xl"
           aria-label="logo"
         >
           <img src={ybyra} alt="Logo Conexão Ybyra"/>
@@ -48,28 +48,28 @@ function Navbar() {
         >
           <Link
             to="/home"
-            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Home
           </Link>
           <Link
             to="/sobre"
-            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Sobre
           </Link>
           <Link
             to="/time"
-            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Time
           </Link>
           <Link
             to="/contato"
-            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-mint-green active:text-indigo-700"
+            className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Contato
