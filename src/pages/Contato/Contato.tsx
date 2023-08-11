@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { toastAlerta } from '../../util/toastAlerta';
 import emailjs from '@emailjs/browser';
+import '../../components/components.css'
 
 const Contato = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -21,7 +22,11 @@ const Contato = () => {
 
     return (
         <>
-            <div className='bg-mint-green grid grid-cols-2 items-center justify-items-center sm:grid-cols-1 h-full'>
+        <section id='contato' className='h-screen flex justify-center items-center flex-col gap-10'>
+        <h2 className="text-center text-2xl font-bold text-gray-800 lg:text-3xl">
+            Entre em contato
+        </h2>
+            <div className='grid grid-cols-2 items-center justify-items-center sm:grid-cols-1'>
                 <form ref={form} onSubmit={sendEmail} className='w-2/3'>
                     <label>Nome completo</label>
                     <input
@@ -62,6 +67,7 @@ const Contato = () => {
                     className="rounded shadow m-8">
                 </iframe>
             </div>
+            </section>
         </>
     );
 };

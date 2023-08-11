@@ -3,10 +3,10 @@
 const testimonials = () => {
   return (
     <>
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
+      <section className="bg-white py-6 sm:py-8 lg:py-12 mb-10 mt-10 h-screen flex justify-center items-center flex-col gap-10">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-          <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">
-            What others say about us
+          <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl py-16">
+            O que estão falando de nós?
           </h2>
 
           <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
@@ -92,7 +92,7 @@ const testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
