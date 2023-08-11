@@ -143,9 +143,11 @@ export function Feed() {
       </div>
 
       <div className="w-3/12 ">
+
         <div className="w-50 h-50">
           <Calendario />
         </div>
+
       </div>
     </div>
   );
