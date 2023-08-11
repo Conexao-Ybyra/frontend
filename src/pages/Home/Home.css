@@ -11,3 +11,8 @@
 .fonte {
     font-family: 'Lobster', cursive;
 }
+
+.gradient-l {
+  background: rgb(241,130,69);
+  background: radial-gradient(circle, rgba(241,130,69,1) 0%, rgba(104,210,126,1) 81%, rgba(104,210,126,1) 91%);
+}

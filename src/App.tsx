@@ -18,7 +18,6 @@ import Perfil from "./pages/Perfil/Perfil";
 import { ToastContainer } from "react-toastify";
 import Equipe from "./pages/Equipe/Equipe";
 
-
 function App() {
   return (
     <>
