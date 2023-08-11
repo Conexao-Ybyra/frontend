@@ -50,10 +50,13 @@ const membros = [
 const Equipe = () => {
     return (
         <>
+
             <section id="time" className="h-screen flex justify-center items-center flex-col gap-10">
                 <h1 className="flex justify-center text-4xl font-bold">Time de desenvolvimento</h1>
                 <h3 className="flex justify-center text-2xl pb-4">Essas são as pessoas por trás do Conexão Ybyra</h3>
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 content-center">
+
+          
                     {membros.map((membro) => (
                         <div key={membro.id} className="bg-white border rounded-xl p-4 m-8 mt-[75px] shadow">
                             <img src={membro.foto} alt={membro.nome} className="w-32 h-32 rounded-full mx-auto -mt-[75px]" />
