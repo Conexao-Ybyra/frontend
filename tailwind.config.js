@@ -14,9 +14,8 @@ module.exports = {
         "white": "#fff",
         "english-violet": "#3C394D",
       },
-      
-  
     },
+    
     screens: {
       sm: { min: "0px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }

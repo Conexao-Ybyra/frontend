@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
-import About from "./pages/About/About";
+import Sobre from "./pages/Sobre/Sobre";
 import Login from "./pages/Login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 import Cadastro from "./pages/Cadastro/Cadastro";
@@ -16,6 +16,8 @@ import FormularioPostagem from "./components/Postagens/formularioPostagem/Formul
 import DeletarPostagem from "./components/Postagens/deletarPostagem/DeletarPostagem";
 import Perfil from "./pages/Perfil/Perfil";
 import { ToastContainer } from "react-toastify";
+import Equipe from "./pages/Equipe/Equipe";
+import Contato from "./pages/Contato/Contato";
 import { Feed } from "./pages/Feed/Feed";
 
 function App() {
@@ -25,7 +27,6 @@ function App() {
         <ToastContainer />
         <BrowserRouter>
           <Navbar />
-          <div className="min-h-[80vh]">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/feed" element={<Feed />} />
@@ -39,11 +40,12 @@ function App() {
               <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/sobre" element={<Sobre />} />
               <Route path="/home" element={<Home />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/time" element={<Equipe />} />
+              <Route path="/contato" element={<Contato />} />
             </Routes>
-          </div>
           <Footer />
         </BrowserRouter>
       </AuthProvider>
