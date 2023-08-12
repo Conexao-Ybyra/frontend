@@ -79,9 +79,10 @@ function Navbar() {
 
           <Link
             to="/cadastro"
-            className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-antiflash-white hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+            className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
           >
             Cadastre-se
+            </Link>
         </div>
 
         {/* Dropdown menu for smaller screens */}

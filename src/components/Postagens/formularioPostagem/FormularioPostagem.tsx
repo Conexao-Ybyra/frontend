@@ -161,7 +161,7 @@ function FormularioPostagem() {
             placeholder="Conteúdo da Postagem"
             name="conteudo"
             required
-            className="w-full rounded p-2 h-full resize-none focus:outline-none focus:outline-mint"
+            className="w-full rounded p-2 h-full resize-none focus:outline-none focus:outline-mint "
           />
         </div>
 
