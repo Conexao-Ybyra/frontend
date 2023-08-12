@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Dna } from "react-loader-spinner";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../services/Service";
