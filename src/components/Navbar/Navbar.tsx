@@ -51,20 +51,20 @@ function Navbar() {
           >
             Sobre
           </Link>
-          <Link
-            to="/time"
+          <a
+            href="#time"
             className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Time
-          </Link>
-          <Link
-            to="/contato"
+          </a>
+          <a
+            href="#contato"
             className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Contato
-          </Link>
+          </a>
         </nav>
         {/* nav - end */}
 

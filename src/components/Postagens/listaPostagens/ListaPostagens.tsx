@@ -49,6 +49,7 @@ function ListaPostagens() {
         <Sidebar />
       </div>
       <div className="w-2/12"></div>
+
       <div className="w-2/12 h-screen fixed top-0 right-0 cursor-pointer ">
         <h1 className="pt-8 pb-4 text-gray-500 text-center quicksand text-md font-medium ">
           Amigos Online
@@ -169,10 +170,21 @@ function ListaPostagens() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
+
       <div className="w-8/12 ml-2 mt-1 mb-1 rounded-lg bg-mint-green flex flex-col overflow-y-auto ">
         <div className="h-fit bg-mint-green">
           <FormularioPostagem />
         </div>
+        {postagens.length === 0 && (
+          <Dna
+            visible={true}
+            height="200"
+            width="200"
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper mx-auto"
+          />
+        )}
         <div className="px-4 mx-auto">
           {postagens
             .sort((a, b) => b.id - a.id)

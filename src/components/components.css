@@ -1,14 +1,13 @@
 .waves{
-    background-image: url("../assets/images/wave.svg");
-    height: min-content;
+    background-image: url("../assets/images/waves.jpeg");
+    height: screen;
 }
 
 .wavesR{
-    background-image: url("../assets/images/waveReverse.svg");
-    height: min-content;
+    background-image: url("../assets/images/wavesR.jpeg");
+    height: 100vh;
 }
 
-.waves2{
-    background-image: url("../assets/images/magicpattern-wave-generator-1691723150428.jpeg");
-    
+.wavesC{
+    background-image: url("../assets/images/wavesContact.jpeg");
 }
