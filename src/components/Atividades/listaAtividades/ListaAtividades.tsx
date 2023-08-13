@@ -7,7 +7,7 @@ function ListaAtividades() {
     <div className="flex flex-col gap-2 items-center justify-around h-full mx-2">
       <a
         href="#"
-        className="group relative flex h-96 w-full  items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg "
+        className="group relative flex h-96 w-full  items-end overflow-hidden rounded-lg  shadow-lg "
       >
         <img
           src={orange}

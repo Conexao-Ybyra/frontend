@@ -10,7 +10,7 @@ function CardTemas({ tema }: CardTemaProps) {
   return (
     <div className="flex ">
       <div className="">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 rounded-lg"></div>
         <img
           src={mountains}
           loading="lazy"

@@ -27,12 +27,12 @@ export function Feed() {
   };
 
   return (
-    <div className="flex h-screen w-screen justify-end">
+    <div className="flex h-screen w-screen justify-end ">
       <div className="w-2/12  ">
         <Sidebar />
       </div>
-      <div className="w-7/12 mt-1 mb-1 rounded-lg bg-mint-green flex flex-col">
-        <div className="h-24 p-8 flex justify-between items-center ">
+      <div className="w-7/12 my-1 rounded-lg bg-mint-green flex flex-col">
+        <div className="h-24 p-8 flex justify-between items-center mb-2">
           <div>
             <h1 className="fonte">Hello, {usuario.nome}! ✌️</h1>
             <p>Recomendado para você</p>
@@ -43,11 +43,11 @@ export function Feed() {
         </div>
 
         <div className="h-2/5">
-          <div className="flex items-center justify-around h-full px-20">
+          <div className="flex items-center justify-around h-full px-10">
             <ListaTemas />
           </div>
         </div>
-        <div className="h-3/5 flex overflow-hidden">
+        <div className="h-3/5 flex overflow-hidden px-4">
           <div className="w-2/3 rounded-lg bg-gray-100 shadow-lg m-6 flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-500 scrollbar-track-300">
             <h2 className="titulo p-4">Atividades perto de você</h2>
             <ListaAtividades />
@@ -63,10 +63,10 @@ export function Feed() {
       </div>
 
       <div className="w-3/12 h-screen ">
-        <div className="w-full h-1/4 rounded-lg quicksand text-center p-4 bg-white ">
-          <Calendario />
+        <div className="w-full h-2/6 rounded-lg quicksand px-auto bg-white border overflow-hidden">
+          <Calendario  />
         </div>
-        <div className="h-3/4 rounded-lg quicksand p-4">
+        <div className="h-4/6 rounded-lg quicksand p-4 overflow-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-500 scrollbar-track-300">
           <h1 className="pb-4">Meus Eventos</h1>
           <ListaEventos />
         </div>
