@@ -8,14 +8,14 @@ interface CardTemaProps {
 
 function CardTemas({ tema }: CardTemaProps) {
   return (
-    <div className="flex flex-row h-full">
-      <div className="relative h-80 w-60 bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+    <div className="flex ">
+      <div className="">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
         <img
           src={mountains}
           loading="lazy"
           alt="Photo by Minh Pham"
-          className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+          className="absolute rounded-lg inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
         />
         <div className="flex flex-col justify-end h-full">
           <h1 className="font-bold text-white text-lg quicksand ml-5 mb-3 absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 py-2 px-4">

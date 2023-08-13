@@ -8,6 +8,7 @@ import "./Feed.css";
 import ListaTemas from "../../components/Temas/listaTemas/ListaTemas";
 import Calendario from "../../components/Calendar/Calendario";
 import ListaAtividades from "../../components/Atividades/listaAtividades/ListaAtividades";
+import ListaEventos from "../../components/Eventos/listaEventos/ListaEventos";
 
 export function Feed() {
   let navigate = useNavigate();
@@ -51,7 +52,13 @@ export function Feed() {
             <h2 className="titulo p-4">Atividades perto de você</h2>
             <ListaAtividades />
           </div>
-          <div className="w-1/3 rounded-lg bg-gray-100 shadow-lg m-6"> </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.39571995876!2d-46.92496597885748!3d-23.681434564936826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1691680927681!5m2!1spt-BR!2sbr"
+                    width="500"
+                    height="350"
+                    loading="lazy"
+                    className="w-1/3 rounded-lg bg-gray-100 shadow-lg m-6">
+                </iframe>
+          
         </div>
       </div>
 
@@ -59,8 +66,9 @@ export function Feed() {
         <div className="w-full h-1/4 rounded-lg quicksand text-center p-4 bg-white ">
           <Calendario />
         </div>
-        <div className="h-3/4 rounded-lg bg-mint">
-          <h1>Meus Eventos</h1>
+        <div className="h-3/4 rounded-lg quicksand p-4">
+          <h1 className="pb-4">Meus Eventos</h1>
+          <ListaEventos />
         </div>
       </div>
     </div>
