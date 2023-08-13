@@ -7,6 +7,7 @@ import SearchBar from "../../components/Searchbar/SearchBar";
 import "./Feed.css";
 import ListaTemas from "../../components/Temas/listaTemas/ListaTemas";
 import Calendario from "../../components/Calendar/Calendario";
+import ListaAtividades from "../../components/Atividades/listaAtividades/ListaAtividades";
 
 export function Feed() {
   let navigate = useNavigate();
@@ -48,7 +49,7 @@ export function Feed() {
         <div className="h-3/5 flex overflow-hidden">
           <div className="w-2/3 rounded-lg bg-gray-100 shadow-lg m-6 flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-500 scrollbar-track-300">
             <h2 className="titulo p-4">Atividades perto de você</h2>
-            
+            <ListaAtividades />
           </div>
           <div className="w-1/3 rounded-lg bg-gray-100 shadow-lg m-6"> </div>
         </div>
