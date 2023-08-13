@@ -9,7 +9,7 @@ function Calendario() {
   const [value, onChange] = useState<Value>(new Date());
 
   return (
-    <div>
+    <div className='tracking-wide flex self-center'>
       <Calendar onChange={onChange} value={value} />
     </div>
   );

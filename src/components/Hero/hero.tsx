@@ -38,7 +38,7 @@ const hero = () => {
             />
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" className="-mt-[20px]">
           <path
             fill="#fff"
             fill-opacity="1"
