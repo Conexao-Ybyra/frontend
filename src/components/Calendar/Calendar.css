@@ -4,7 +4,8 @@
     background: white;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.125em;
-    border: none;
+    border-width: 0;
+    border-color: white;
     border-radius: 10px; /* Add rounded corners */
   }
   
