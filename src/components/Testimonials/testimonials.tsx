@@ -5,75 +5,74 @@ const testimonials = () => {
     <>
       <section className="bg-white py-6 sm:py-8 lg:py-12 mb-10 mt-10 h-screen flex justify-center items-center flex-col gap-10">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-          <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl py-16">
+          <h1 className="pb-8 text-center text-5xl fonte text-mint md:mb-12">
             O que estão falando de nós?
-          </h2>
+          </h1>
+
+          <h3 className="pb-16 text-center text-2xl text-english-violet md:mb-12">Veja os depoimentos de alguns usuários:</h3>
 
           <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-              <div className="text-center text-gray-600">
-                “This is a section of some simple filler text, also known as
-                placeholder text.”
+              <div className="text-center text-english-violet">
+                “Bom dia turma! Hoje tem canavas.”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                   <img
-                    src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+                    src="https://media.licdn.com/dms/image/D4D03AQE9VK3cOR2j3g/profile-displayphoto-shrink_800_800/0/1675420980562?e=1697673600&v=beta&t=aCahKCwWcXflgRjlyf3D1G9fAXIwkottvT0oClNNYm4"
                     loading="lazy"
-                    alt="Photo by Radu Florin"
+                    alt=""
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
 
                 <div>
-                  <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                    John McCulling
+                  <div className="text-center text-sm font-bold text-mint sm:text-left md:text-base">
+                    Geandro Araújo
                   </div>
                   <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                    CEO / Datadrift
+                    Dev / Instrutor
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-              <div className="text-center text-gray-600">
-                “This is a section of some simple filler text, also known as
-                placeholder text.”
+              <div className="text-center text-english-violet">
+                “Grupo do Lucas, levanta a mão.”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                   <img
-                    src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
+                    src="https://media.licdn.com/dms/image/C4D03AQFkYvuFl4Ny_g/profile-displayphoto-shrink_800_800/0/1658362068270?e=1697673600&v=beta&t=y7oOxmtXgfmH0j89ljf-Ggbl5zalWYkN76W0WHUycmU"
                     loading="lazy"
-                    alt="Photo by christian ferrer"
+                    alt=""
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
 
                 <div>
-                  <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                    Kate Berg
+                  <div className="text-center text-sm font-bold text-mint sm:text-left md:text-base">
+                    Yuri Oliveira
                   </div>
                   <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                    CFO / Dashdash
+                    Dev / Instrutor
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-              <div className="text-center text-gray-600">
-                “This is a section of some simple filler text, also known as
-                placeholder text.”
+              <div className="text-center text-english-violet">
+                “Adorei o site, super recomendo, contrataria quem desenvolveu num piscar de olhos!”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                   <img
-                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
+                    src="https://cdn-icons-png.flaticon.com/512/709/709699.png?w=740&t=st=1691985038~exp=1691985638~hmac=a9e29eda691bb1d4aeebd25690f36d1f56abe77b17292a8dddcad3c49b3a0d91"
                     loading="lazy"
                     alt="Photo by Ayo Ogunseinde"
                     className="h-full w-full object-cover object-center"
@@ -81,11 +80,11 @@ const testimonials = () => {
                 </div>
 
                 <div>
-                  <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                    Greg Jackson
+                  <div className="text-center text-sm font-bold text-mint sm:text-left md:text-base">
+                    Usuário Anônimo mas 100% confiável
                   </div>
                   <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                    CTO / Uptime
+                    Desempregado
                   </p>
                 </div>
               </div>

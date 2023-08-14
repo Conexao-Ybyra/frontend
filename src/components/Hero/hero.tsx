@@ -6,9 +6,9 @@ const hero = () => {
   return (
     <>
       <section className="text-gray-600 body-font bg-mint-green">
-        <div className="container mx-auto flex px-5 py-24  flex-row items-center">
+        <div className="container mx-auto flex py-24  flex-row items-center">
           <div className="lg:flex-grow w-3/4 mr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="batatinha sm:text-4xl text-7xl mb-4 text-mint ">
+            <h1 className="batatinha sm:text-4xl text-7xl mb-4 text-mint fonte">
               Conexão Ybyra
             </h1>
             <h2 className="text-xl mb-8 text-regal-blue ">
@@ -30,14 +30,14 @@ const hero = () => {
               </Link>
             </div>
           </div>
-          <div className="w-1/2 w-5/6">
+          <div className="w-full">
             <img
               className="object-cover object-center rounded"
               alt="hero"
               src={Hero}
             />
           </div>
-        </div>
+        </div >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" className="-mt-[20px]">
           <path
             fill="#fff"
