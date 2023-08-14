@@ -229,7 +229,7 @@ const Sidebar = () => {
       ),
     },
   ];
-  // fixed top-0 left-0
+  
   return (
     <>
       <nav className="h-full bg-white space-y-8 sm:w-80 quicksand">
