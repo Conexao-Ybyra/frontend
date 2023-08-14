@@ -14,7 +14,7 @@ const testimonials = () => {
           <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
               <div className="text-center text-english-violet">
-                “Bom dia turma! Hoje tem canavas.”
+                “Bom dia turma! Hoje tem canvas.”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
@@ -72,7 +72,7 @@ const testimonials = () => {
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                   <img
-                    src="https://cdn-icons-png.flaticon.com/512/709/709699.png?w=740&t=st=1691985038~exp=1691985638~hmac=a9e29eda691bb1d4aeebd25690f36d1f56abe77b17292a8dddcad3c49b3a0d91"
+                    src="https://img.freepik.com/free-icon/user_318-875902.jpg?t=st=1692031874~exp=1692032474~hmac=05e9b88383d49c0bfd452c26e52009781b2d1de7932599b05efdd9a1c46a0e64"
                     loading="lazy"
                     alt="Photo by Ayo Ogunseinde"
                     className="h-full w-full object-cover object-center"
