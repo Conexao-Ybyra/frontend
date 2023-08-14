@@ -111,28 +111,28 @@ function Navbar() {
             <div className="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg">
               <Link
                 to="/home"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet/50"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet/50 hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Home
               </Link>
               <Link
                 to="/sobre"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:text-white hover:bg-english-violet"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:text-white hover:bg-english-violet hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Sobre
               </Link>
               <Link
                 to="/time"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-sunglow/75 hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Time
               </Link>
               <Link
                 to="/contato"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Contato
@@ -140,7 +140,7 @@ function Navbar() {
               <div>
                 <Link
                   to="/login"  
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola hover:rounded-lg"
                 onClick={closeDropdown}
                   >
                   Entrar
@@ -149,7 +149,7 @@ function Navbar() {
                 <Link
                   to="/cadastro"
                   
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola hover:rounded-lg"
                 onClick={closeDropdown}
                   >
                   Cadastre-se
