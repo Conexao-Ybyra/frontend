@@ -46,19 +46,19 @@ function CardPostagem({ post }: CardPostagemProps) {
           }
           <h3 className="text-lg font-bold">{post.usuario?.nome}</h3>
         </div>
-        <div className="mt-4">
-          <h4 className="text-xl font-semibold">{post.titulo}</h4>
-          <p className="mt-2 text-gray-600">Tema: {post.tema?.descricao}</p>
-          <p className="mt-2 text-gray-600">Data: {new Intl.DateTimeFormat(undefined, {
+        <div className="mt-4 p-4">
+          <h4 className="text-xl font-semibold pl-4">{post.titulo}</h4>
+          <p className="mt-2 text-gray-600 pl-4">Tema: {post.tema?.descricao}</p>
+          <p className="mt-2 text-gray-600 pl-4">Data: {new Intl.DateTimeFormat(undefined, {
             dateStyle: 'full',
             timeStyle: 'medium',
           }).format(new Date(post.data))}</p>
-          <p className="mt-2 text-gray-600">{post.localizacao}</p>
-          <p className="mt-2 text-gray-700">{post.conteudo}</p>
+          <p className="mt-2 text-gray-600 pl-4">{post.localizacao}</p>
+          <p className="mt-2 text-gray-700 pl-4">{post.conteudo}</p>
           {post.midia &&
             <img src={post.midia}
               alt={`Foto da postagem de ${post.usuario?.nome}`}
-              className="mt-2 rounded-lg max-h-fit p-10"
+              className="mt-2 rounded-lg max-h-auto p-10"
             />}
         </div>
       </div>

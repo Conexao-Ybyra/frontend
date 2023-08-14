@@ -8,6 +8,7 @@ import CardPostagem from "../cardPostagens/CardPostagem";
 import { toastAlerta } from "../../../util/toastAlerta";
 import Sidebar from "../../Sidebar/Sidebar";
 import FormularioPostagem from "../formularioPostagem/FormularioPostagem";
+import ListaAmigos from "../../Amigos/listaAmigos/ListaAmigos";
 
 function ListaPostagens() {
   const [postagens, setPostagens] = useState<Postagem[]>([]);
@@ -50,150 +51,40 @@ function ListaPostagens() {
       </div>
       <div className="w-2/12"></div>
 
-      <div className="w-2/12 h-screen fixed top-0 right-0 cursor-pointer ">
-        <h1 className="pt-8 pb-4 text-gray-500 text-center quicksand text-md font-medium ">
-          Amigos Online
-        </h1>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-4">
-          <div className="flex items-center gap-x-4">
-            <img src={usuario.foto} className="w-12 h-12 rounded-full" />
-            <div>
-              <span className="block text-gray-700 text-sm font-semibold">
-                Usuário Teste
-              </span>
-              <span className="block mt-px text-gray-600 text-mint text-xs">
-                Online
-              </span>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      {postagens.length === 0 && (
-        <Oval
-        height={80}
-        width={80}
-        color="#4fa94d"
-        wrapperStyle={{}}
-        wrapperClass=""
-        visible={true}
-        ariaLabel='oval-loading'
-        secondaryColor="#4fa94d"
-        strokeWidth={2}
-        strokeWidthSecondary={2}
-      
-      />
-      )}
+      <ListaAmigos />
 
       <div className="w-8/12 ml-2 mt-1 mb-1 rounded-lg bg-mint-green flex flex-col overflow-y-auto ">
+        {postagens.length === 0 && (
+          <Oval
+            height={80}
+            width={80}
+            color="#4fa94d"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+            ariaLabel="oval-loading"
+            secondaryColor="#4fa94d"
+            strokeWidth={2}
+            strokeWidthSecondary={2}
+            
+          />
+        )}
         <div className="h-fit bg-mint-green">
           <FormularioPostagem />
         </div>
         {postagens.length === 0 && (
           <Oval
-          height={80}
-          width={80}
-          color="#4fa94d"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-          ariaLabel='oval-loading'
-          secondaryColor="#4fa94d"
-          strokeWidth={2}
-          strokeWidthSecondary={2}
-        
-        />
+            height={80}
+            width={80}
+            color="#4fa94d"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+            ariaLabel="oval-loading"
+            secondaryColor="#4fa94d"
+            strokeWidth={2}
+            strokeWidthSecondary={2}
+          />
         )}
         <div className="px-4 mx-auto">
           {postagens

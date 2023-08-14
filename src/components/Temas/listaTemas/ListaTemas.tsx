@@ -7,7 +7,7 @@ import CardTemas from "../cardTemas/CardTemas";
 import { toastAlerta } from "../../../util/toastAlerta";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import './ListaTemas.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 

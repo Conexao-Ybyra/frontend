@@ -8,7 +8,6 @@ import Sobre from "./pages/Sobre/Sobre";
 import Login from "./pages/Login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 import Cadastro from "./pages/Cadastro/Cadastro";
-import ListaTemas from "./components/Temas/listaTemas/ListaTemas";
 import FormularioTema from "./components/Temas/formularioTema/FormularioTema";
 import DeletarTema from "./components/Temas/deletarTema/DeletarTema";
 import ListaPostagens from "./components/Postagens/listaPostagens/ListaPostagens";
@@ -19,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import Equipe from "./pages/Equipe/Equipe";
 import Contato from "./pages/Contato/Contato";
 import { Feed } from "./pages/Feed/Feed";
+import Temas from "./pages/Temas/Temas";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
               <Route path="/feed" element={<Feed />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
-              <Route path="/temas" element={<ListaTemas />} />
+              <Route path="/temas" element={<Temas />} />
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
