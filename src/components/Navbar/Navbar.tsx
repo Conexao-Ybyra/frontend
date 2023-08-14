@@ -111,14 +111,14 @@ function Navbar() {
             <div className="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg">
               <Link
                 to="/home"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet/50 hover:rounded-lg"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-sunglow/75 hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Home
               </Link>
               <Link
                 to="/sobre"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:text-white hover:bg-english-violet hover:rounded-lg"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-sunglow/75 hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Sobre
@@ -132,7 +132,7 @@ function Navbar() {
               </Link>
               <Link
                 to="/contato"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet hover:rounded-lg"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-sunglow/75 hover:rounded-lg"
                 onClick={closeDropdown}
               >
                 Contato
