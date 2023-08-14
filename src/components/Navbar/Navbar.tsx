@@ -111,37 +111,36 @@ function Navbar() {
             <div className="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg">
               <Link
                 to="/home"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
                 onClick={closeDropdown}
               >
                 Home
               </Link>
               <Link
                 to="/sobre"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
                 onClick={closeDropdown}
               >
                 Sobre
               </Link>
               <Link
                 to="/time"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
                 onClick={closeDropdown}
               >
                 Time
               </Link>
               <Link
                 to="/contato"
-                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-indigo-100"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-english-violet"
                 onClick={closeDropdown}
               >
                 Contato
               </Link>
               <div>
                 <Link
-                  to="/login"
-                  
-                  className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+                  to="/login"  
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola"
                 onClick={closeDropdown}
                   >
                   Entrar
@@ -150,7 +149,7 @@ function Navbar() {
                 <Link
                   to="/cadastro"
                   
-                  className="hidden rounded-3xl bg-orange-crayola px-5 py-3 mr-3 text-center text-sm font-semibold text-antiflash-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 hover:text-orange-crayola focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+                className="block px-4 py-2 text-sm text-gray-600 font-semibold hover:bg-orange-crayola"
                 onClick={closeDropdown}
                   >
                   Cadastre-se
