@@ -23,7 +23,7 @@ const Contato = () => {
     return (
         <>
         <section id='contato' className='h-screen flex justify-center items-center flex-col gap-10'>
-        <h2 className="text-center text-2xl font-bold text-gray-800 lg:text-3xl">
+        <h2 className="text-center fonte text-5xl text-mint">
             Entre em contato
         </h2>
             <div className='grid grid-cols-2 items-center justify-items-center sm:grid-cols-1'>
@@ -33,27 +33,27 @@ const Contato = () => {
                         type="text"
                         name="nome"
                         required
-                        className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-orange-crayola"
+                        className="border-2 rounded-lg w-full py-2 px-4 mb-2 focus:outline-none focus:border-orange-crayola"
                     />
                     <label>Email</label>
                     <input
                         type="email"
                         name="email"
                         required
-                        className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-orange-crayola"
+                        className="border-2 rounded-lg w-full py-2 px-4 mb-2 focus:outline-none focus:border-orange-crayola"
                     />
                     <label>Assunto</label>
                     <input
                         type="text"
                         name="assunto"
                         required
-                        className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-orange-crayola"
+                        className="border-2 rounded-lg w-full py-2 px-4 mb-2 focus:outline-none focus:border-orange-crayola"
                     />
                     <label>Mensagem</label>
                     <textarea
                         name="mensagem"
                         required
-                        className="border-2 rounded-lg w-full py-2 px-4 focus:outline-none focus:border-orange-crayola"
+                        className="border-2 rounded-lg w-full py-2 px-4 mb-2 focus:outline-none focus:border-orange-crayola"
                     />
                     <button type="submit" className="bg-orange-crayola hover:bg-gray-300 text-white hover:text-orange-crayola font-bold py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline">
                         Enviar
