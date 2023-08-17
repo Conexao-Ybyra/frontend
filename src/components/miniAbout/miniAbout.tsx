@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Tree from "../../assets/images/cherry tree.gif";
+import Tree from "../../assets/images/cherry-tree-no-bg.gif";
 import '../components.css'
 
 const About = () => {
   return (
     <>
-   <section className="text-gray-600 body-font h-screen flex justify-center items-center flex-col">
+   <section className="text-gray-600 body-font h-4/5 flex justify-center items-center flex-col waves md:bg-none sm:bg-none">
   <div className="container mx-auto flex md:flex-row flex-row items-center">
     <div className="w-screen md:w-1/2 mb-10 md:mb-0">
       <img className="object-cover object-center rounded" alt="hero" src={Tree}/>

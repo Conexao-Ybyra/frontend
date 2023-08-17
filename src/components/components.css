@@ -2,7 +2,11 @@
     background-image: url("../assets/images/waves.jpeg");
     height: screen;
 }
-
+.wavesN{
+    background: none;
+    height: screen;
+    display: hidden;
+}
 .wavesR{
     background-image: url("../assets/images/wavesR.jpeg");
     height: 100vh;

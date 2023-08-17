@@ -52,14 +52,14 @@ function Navbar() {
             Sobre
           </Link>
           <a
-            href="#time"
+            href="/home#time"
             className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
             Time
           </a>
           <a
-            href="#contato"
+            href="/home#contato"
             className="text-lg font-semibold text-english-violet transition duration-100 hover:text-orange-crayola active:text-indigo-700"
             onClick={closeDropdown}
           >
