@@ -51,7 +51,7 @@ const Equipe = () => {
     return (
         <>
 
-            <section id="time" className="h-screen flex justify-center items-center flex-col">
+            <section id="time" className="h-4/5 flex justify-center items-center flex-col wavesR md:bg-none sm:bg-none">
                 <h1 className="flex justify-center text-5xl fonte text-mint pb-8">Time de desenvolvimento</h1>
                 <h3 className="flex justify-center text-2xl text-english-violet pb-16">Essas são as pessoas por trás do Conexão Ybyra!</h3>
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 content-center py-4">
