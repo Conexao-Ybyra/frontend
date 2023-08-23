@@ -13,7 +13,7 @@ const propriedades = [
   { id: 3,
     texto: "Apoie pequenos comércios",
     imagem: Feature3,
-    texto2: "Conheça pessoas novas"
+    texto2: "Conheça pessoas novas ao seu redor"
   }
 ];
 
@@ -36,13 +36,13 @@ const features = () => {
           <div className="grid gap-8 grid-cols-1 md:gap-0 md:divide-x sm:grid-cols-1">
             {propriedades.map((propriedade) => (
               <div key={propriedade.id} className="text-orange-crayola grid grid-cols-3 fonte text-xl">
-                <div className="grid justify-center items-center">
+                <div className="grid justify-center items-center text-3xl">
                 {propriedade.texto}
                 </div>
                 <div className="">
                   <img src={propriedade.imagem} />
                 </div>
-                <div className="grid justify-center items-center pr-8">
+                <div className="grid justify-center items-center pr-8 text-3xl">
                 {propriedade.texto2}
                 </div>
               </div>
