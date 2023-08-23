@@ -14,7 +14,7 @@ const testimonials = () => {
           <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
               <div className="text-center text-english-violet">
-                “Bom dia turma! Hoje tem canvas.”
+                  “Tenho interesse em me exercitar no parque do meu bairro, e com esse app posso conhecer pessoas para me acompanhar!”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
@@ -40,7 +40,7 @@ const testimonials = () => {
 
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
               <div className="text-center text-english-violet">
-                “Grupo do Lucas, levanta a mão.”
+                “Utilizarei o Conexão Ybyra para organizar a construção de uma horta comunitária na praça da minha comunidade!”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
@@ -66,7 +66,7 @@ const testimonials = () => {
 
             <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
               <div className="text-center text-english-violet">
-                “Adorei o site, super recomendo, contrataria quem desenvolveu num piscar de olhos!”
+                “Adorei o site, um app que pensa no social além da telinha do código!”
               </div>
 
               <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
@@ -81,10 +81,10 @@ const testimonials = () => {
 
                 <div>
                   <div className="text-center text-sm font-bold text-mint sm:text-left md:text-base">
-                    Usuário Anônimo mas 100% confiável
+                    Usuário Anônimo
                   </div>
                   <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                    Desempregado
+                    Dev
                   </p>
                 </div>
               </div>
